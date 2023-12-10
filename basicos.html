@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos JavaScript</title>
+   
+</head>
+<body>
+   
+    <script>
+    //     var hola = "Hola Mundo";
+    //     let hello = "Hello World";
+    //     console.log(hola);
+    //     console.log(hello);
+    //     console.log(window);
+    //     console.log(window.hola);
+    //     console.log(window.hello);
+    //     // Ambito de bloque
+    //     //Esto es un comentario de una linea
+    //     /*
+    //     Esto 
+    //     es 
+    //     un 
+    //     comentario 
+    //     de 
+    //     varias 
+    //     lineas
+    //     */
+    //     console.log("****************** var **********************");
+    //    var musica = "Rock";
+    //    console.log("Variable Música antes del Bloque: " + musica);
+    //    {
+    //         var musica = "Pop";
+    //         console.log("Variable Música dentro del Bloque: " + musica);
+    //     }
+    //     console.log("Variable Música después del Bloque: " + musica);
+    //     console.log("****************** let **********************");
+    //     let musica2 = "Rock";
+    //     console.log("Variable Música antes del Bloque: " + musica2);
+    //     {
+    //         let musica2 = "Pop";
+    //         console.log("Variable Música dentro del Bloque: " + musica2);
+    //     }
+    //     console.log("Variable Música despues del Bloque: " + musica2);
+
+        // let a;
+        // const PI = 3.1416;
+        // const NUEVE = 9;
+        // console.log(PI);
+        // // PI = 3.15;
+        // a = "Kenai";
+        // console.log(a);
+
+        // const objeto = {
+        //     nombre : "Fernando",
+        //     edad : 30
+        // }
+
+        // const colores = ["Blanco","Negro","Azul"]
+        // console.log(colores);
+
+
+        // objeto.correo = "exequielvargas93@gmail.com";
+        // colores.push("Anaranjado");
+
+        // console.log(colores,objeto);
+        /*********************************************************************/
+        //  Cadenas de texto Strings
+
+        // let nombre = "Fernando";
+        // let apellido = 'Vargas';
+        // let parrafo = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo a, laborum sit, atque nihil incidunt ut illum placeat, aliquam dolore ab harum eos minus obcaecati. Ea sit dolor nihil deleniti!"
+        // let saludo = new String("Hola Mundo");
+        // console.log(nombre.length,apellido.length,saludo.length); //La propiedad length se encarga de devolver la cantidad de caracteres que contiene la cadena.
+        // console.log(nombre.toLowerCase(),apellido.toUpperCase);
+        // console.log(parrafo.includes('amet'));
+        // console.log(parrafo.includes('lorem')); // Busca la palabra pasada como argumento en la cadena.
+        // console.log(parrafo.trim()); //Quita los espacios en blanco.
+        // console.log(parrafo.split(""));
+        // console.log(parrafo.split(" "));
+
+    /********************* Template Strings *************************************************/
+    // let nombre = "Fer";    
+    // let apellido = "Vargas";
+
+    // //Concatenación
+
+    // let saludo = "Hola " + nombre + " " + apellido;
+    // console.log(saludo);
+    
+    // //Interpolación de variables
+    // //Template Strings
+    // let saludo2 = `Hola mi nombre es ${nombre} ${apellido}`;
+    // console.log(saludo2);
+
+    // let ul = `
+    //         <ul>
+    //             <li>Primavera</li>
+    //             <li>Verano</li>
+    //             <li>Otoño</li>
+    //             <li>Invierno</li>
+    //         </ul>`;
+    
+    // console.log(ul);
+    
+    /**************************** Numbers **************************************************/
+
+    // let a = 2;
+    // let b = new Number(10);
+    // let c = 7.19;
+    // let d = "5.19";
+    // let nota = 7.3;
+    // console.log(a,b);
+    // console.log(c.toFixed(1));
+    // console.log(nota.toFixed(5));
+    // console.log(parseInt(c));
+    // console.log(parseFloat("7.30"));
+    // console.log(typeof c , typeof b);
+    // console.log(a+b);
+    // console.log(c+parseInt(d));
+    // console.log(c + parseFloat(d));
+    // console.log(c + Number.parseInt(d));
+    // console.log(c + Number.parseFloat(d));
+
+/********************************** Boolenos *****************************************************/
+
+// let verdadero = true;
+// let falso = false;
+// let v = new Boolean(true);
+// let f = new Boolean(false);
+// console.log(verdadero,falso);
+// console.log(typeof verdadero , typeof falso);
+// console.log(v,f);
+// console.log(Boolean(0));
+// console.log(Boolean(1));
+// console.log(Boolean(""));
+// console.log(Boolean(" "));
+// console.log(Boolean(-1));
+// console.log(Boolean(2));
+// console.log(Boolean(!{}));    
+// console.log(Boolean(Infinity));    
+// console.log(Boolean(-Infinity));    
+
+/**************************** Null Undefined NaN ***********************************************/
+
+/*
+Undefined indica que se no se ha inicializado una variable y su valor es indefinido
+
+// */
+// let a;
+// console.log(a); //Undefined
+
+// /*
+// null es un valor especial que indica la ausencia de valor
+// */
+// let vacio = null;
+// console.log(vacio); // null
+
+// /*
+// NaN - Not a Number
+// */
+// let no_es_un_numero = "34c" * 2;
+// console.log(no_es_un_numero); // NAN
+
+/*
+Una función es un bloque de código autocontenido, que se puede definir una vez y ejecutar en cualquier momento.
+
+Opcionalmente, una función puede aceptar parámetros y retornar o devolver un valor.
+
+Las funciones en JavaScript son objetos, un tipo especial de objetos:
+
+Se dice que las funciones son ciudadanos de primera clase porque pueden asignarse a un valor,
+y se pueden pasar como argumentos y usarse como un valor de retorno.
+
+*/
+
+//Función Declarada
+
+
+
+// function estoEsUnaFuncion() {
+//     console.log("Uno");
+//     console.log("Dos");
+//     console.log("Tres");
+// }
+
+// function unaFuncionQueDevuelveValor(){
+
+//     console.log("Uno");
+//     console.log("Dos");
+//     console.log("Tres");
+//     return "¡La funcion ha retornado una cadena de texto!";
+// }
+
+// let valorDeFuncion = unaFuncionQueDevuelveValor();
+// console.log(valorDeFuncion);
+
+//Invocación de una función
+// estoEsUnaFuncion();
+// unaFuncionQueDevuelveValor();
+
+// function saludar(nombre = "Fernando",edad = 34){
+//     console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`);
+// }
+
+// saludar("Aquiles",30);
+// declarada();
+
+// // Funciones declaradas Vs Funciones Expresadas
+// function declarada(){
+//     console.log("Esto es una función declarada puede ejecutarse en cualquier parte de nuestro codigo incluso antes de que la función sea declarada");
+// }
+// declarada();
+
+// // Función anónima
+// const funcionExpresada = function(){
+//     console.log("Esto es una función expresada, es decir que se ha asignado como valor a una variable, si invocamos esta función antes de su definicion javaScript nos dira......" , "Uncaught ReferenceError: Cannot access 'funcionExpresada' before initialization");
+// }
+
+// funcionExpresada();
+
+
+/********************************** Arrays *****************************************************/
+
+const a = [];
+const b = [1,true,"Hola",["A","B","C"]];
+console.log(a);
+console.log(b);
+console.log(b.length);
+console.log(b[2]);
+console.log(b[3][2]);
+
+const c = Array.of("X","Y","Z",9,8,7);
+
+console.log(c);
+
+const d = Array(100).fill(false);
+console.log(d);
+
+const e = new Array();
+console.log(e);
+
+
+const f = new Array(1,2,3,4,true,false,"etc");
+console.log(f);
+
+
+const colores = ["Rojo","Verde","Azul"];
+console.log(colores);
+colores.push("Negro");
+console.log(colores);
+let eliminado = colores.pop();
+console.log(colores);
+console.log(eliminado);
+
+let lista = colores.forEach(function(e,idx){
+    console.log(`<li id=${idx}>${e}</li>`);
+});
+
+
+
+console.log(lista);
+</script>
+</body>
+</html>
